@@ -4,6 +4,8 @@ const express = require('express')
 const socketIO = require('socket.io')
 const formatMessage = require('./utils/message')
 
+var indexRouter = require('./routers/index');
+
 const {
     userJoin,
     userLeave,
@@ -15,8 +17,11 @@ const app = express()
 const server = http.createServer(app);
 const io = socketIO(server);
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/', indexRouter);
 
 const PORT = 3000 || process.env.PORT
 
