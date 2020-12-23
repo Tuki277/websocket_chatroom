@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Chat Room App</title>
+	</head>
+	<body>
+		<div class="join-container">
+			<header class="join-header">
+				<h1><i class="fas fa-comments"></i> ChatRoom Beta </h1>
+			</header>
+			<main class="join-main">
+				<form action="chat.html">
+					<div class="form-control">
+						<label for="username">Tên của bạn</label>
+						<input
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Enter username..."
+							required
+						/>
+					</div>
+					<div class="form-control">
+						<label for="room">Phòng</label>
+						<select name="room" id="room">
+							<option value="Test 1">Test 1</option>
+							<option value="Test 2">Test 2</option>
+						</select>
+					</div>
+					<button type="submit" class="btn">Tham gia</button>
+				</form>
+			</main>
+		</div>
+		<div>
+			<a href="https://www.facebook.com/tran.huy.27/"><button style="height: 40px; width: 80px; float: right; background-color: #00ffff; border : none; margin-bottom: 30px;">Báo cáo lỗi</button></a>
+		</div>
+	</body>
+	<script>
+		alert('Đây là phiên bản beta, còn có nhiều lỗi xảy ra, cảm ơn bạn đã tham gia test, nếu có bất kì lỗi nào mà bạn phát hiện, hãy báo nó lại cho tôi. Những đóng góp của bạn sẽ làm sản phẩm của tôi hoàn thiện hơn')
+	</script>
+</html>
